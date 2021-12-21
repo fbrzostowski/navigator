@@ -1,0 +1,28 @@
+[Desktop Entry]
+Version=1.0
+Name=Navigator
+Comment=Web App
+Exec=chromium-browser --app=https://Navigator.fbrzostowski.repl.co --class=WebApp-googlemaps9427 --user-data-dir=/home/filip/.local/share/ice/profiles/googlemaps9427
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=org.kde.klettres
+Categories=GTK;Network;
+MimeType=text/html;text/xml;application/xhtml_xml;
+StartupWMClass=WebApp-googlemaps9427
+StartupNotify=true
+X-WebApp-URL=https://www.google.com/maps/
+X-WebApp-Isolated=true
+Actions=Maps;Earth;google
+
+[Desktop Action Maps]
+Name=Google Maps
+Exec=bash -c "xdotool key 0xffe3+0x0057; chromium-browser --app=https://www.google.com/maps/ --class=WebApp-googlemaps9427 --user-data-dir=/home/filip/.local/share/ice/profiles/googlemaps9427"
+
+[Desktop Action Earth]
+Name=Google Earth
+Exec=bash -c "xdotool key 0xffe3+0x0057; chromium-browser --app=https://earth.google.com --class=WebApp-googlemaps9427 --user-data-dir=/home/filip/.local/share/ice/profiles/googlemaps9427"
+
+[Desktop Action google]
+Name=Google
+Exec=bash -c "xdotool key 0xffe3+0x0057; chromium-browser --app=https://www.google.com --class=WebApp-googlemaps9427 --user-data-dir=/home/filip/.local/share/ice/profiles/googlemaps9427"
